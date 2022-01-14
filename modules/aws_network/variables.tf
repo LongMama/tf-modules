@@ -13,23 +13,17 @@ variable "vpc_cidr" {
 variable "public_subnet_cidrs" {
   description = "Cidr blocks for Public subnet"
   type        = list(any)
-  default = [
-    ""
-  ]
+  default     = []
 }
 
 variable "private_subnet_cidrs" {
   description = "Cidr blocks for Private subnet"
   type        = list(any)
-  default = [
-    ""
-  ]
+  default     = []
 }
 
 variable "database_subnet_cidrs" {
   description = "Cidr blocks for Database subnet"
   type        = list(any)
-  default = [
-    ""
-  ]
+  default     = []
 }
