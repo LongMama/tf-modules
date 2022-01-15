@@ -1,3 +1,7 @@
+variable "env" {
+  default = ""
+}
+
 variable "instance_type" {
   description = "Instance type for Bastion Host"
   default     = "t2.micro"

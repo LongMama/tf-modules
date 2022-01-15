@@ -18,14 +18,14 @@ data "aws_key_pair" "key" {
 data "aws_vpc" "vpc" {
   filter {
     name   = "tag:Name"
-    values = ["*-VPC"]
+    values = ["${var.env}-VPC"]
   }
 }
 
 data "aws_subnets" "public_subnets" {
   filter {
     name   = "tag:Name"
-    values = ["*-public subnet-*"]
+    values = ["${var.env}-public subnet-*"]
   }
 }
 
